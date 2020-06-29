@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!-- Contains the definition of the motion -->
+    <!-- Attributes constraintSetStart and constraintSetEnd are references -->
+    <!-- to the endpoints of the motion. These endpoints are defined with ConstraintSet   -->
+    <!-- tag below  -->
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:duration="1000">
+        <!-- Tag that allows control the motion via touch -->
+        <!-- touchAnchorId refers to the view that is going to move-->
+        <!-- touchAnchorSide means that we are dragging the view from the right side  -->
+        <!-- dragDirection refers to the PROGRESS direction of the drag -->
+        <OnSwipe
+            motion:touchAnchorId="@+id/button"
+            motion:touchAnchorSide="right"
+            motion:dragDirection="dragRight" />
+    </Transition>
+
+    <!-- <ConstraintSet> is where you define the various constraints that describe your motion. -->
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+</MotionScene>
