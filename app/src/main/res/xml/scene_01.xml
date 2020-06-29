@@ -9,7 +9,8 @@
     <Transition
         motion:constraintSetStart="@+id/start"
         motion:constraintSetEnd="@+id/end"
-        motion:duration="1000">
+        motion:duration="1000"
+        motion:motionInterpolator="linear">
         <!-- Tag that allows control the motion via touch -->
         <!-- touchAnchorId refers to the view that is going to move-->
         <!-- touchAnchorSide means that we are dragging the view from the right side  -->
@@ -18,6 +19,15 @@
             motion:touchAnchorId="@+id/button"
             motion:touchAnchorSide="right"
             motion:dragDirection="dragRight" />
+        <KeyFrameSet>
+            <!-- This keyframe will alter the Y position of the motion. -->
+            <!-- framePosition specifies the position in time of the frame. -->
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentY="-0.25"
+                motion:framePosition="50"
+                motion:motionTarget="@id/button"/>
+        </KeyFrameSet>
     </Transition>
 
     <!-- <ConstraintSet> is where you define the various constraints that describe your motion. -->
