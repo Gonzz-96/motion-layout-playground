@@ -101,6 +101,13 @@
         android:text="M" />
 
     <TextView
+        android:id="@+id/programming_letter_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="N" />
+
+    <TextView
         android:id="@+id/programming_letter_g_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
