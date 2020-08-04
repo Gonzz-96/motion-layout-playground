@@ -32,6 +32,14 @@
         android:textSize="24sp"
         android:text="L" />
 
+    <TextView
+        android:id="@+id/love_letter_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="24sp"
+        android:text="O" />
+
     <!-- hgl stands for "horizontal guideline" -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hgl1"
