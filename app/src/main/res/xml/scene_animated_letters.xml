@@ -35,6 +35,12 @@
                 motion:framePosition="50"
                 motion:percentX="1"
                 motion:percentY="0" />
+
+            <KeyPosition
+                motion:motionTarget="@id/love_letter_e"
+                motion:framePosition="50"
+                motion:percentX="1"
+                motion:percentY="0" />
         </KeyFrameSet>
     </Transition>
 
@@ -45,6 +51,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
+            motion:layout_constraintVertical_chainStyle="spread"
+            motion:layout_constraintBottom_toTopOf="@id/love_letter_l"
             motion:layout_constraintEnd_toStartOf="@id/hgl1"
             motion:layout_constraintTop_toBottomOf="@id/vgl1" />
 
@@ -52,6 +60,8 @@
             android:id="@id/love_letter_l"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:layout_constraintBottom_toTopOf="@id/love_letter_o"
             motion:layout_constraintTop_toBottomOf="@id/letter_i"
             motion:layout_constraintEnd_toStartOf="@id/hgl1" />
 
@@ -59,6 +69,8 @@
             android:id="@id/love_letter_o"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:layout_constraintBottom_toTopOf="@id/love_letter_v"
             motion:layout_constraintTop_toBottomOf="@id/love_letter_l"
             motion:layout_constraintEnd_toStartOf="@id/hgl1" />
 
@@ -66,7 +78,16 @@
             android:id="@id/love_letter_v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constraintVertical_chainStyle="spread"
+            motion:layout_constraintBottom_toTopOf="@id/vgl2"
             motion:layout_constraintTop_toBottomOf="@id/love_letter_o"
+            motion:layout_constraintEnd_toStartOf="@id/hgl1" />
+
+        <Constraint
+            android:id="@id/love_letter_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/vgl2"
             motion:layout_constraintEnd_toStartOf="@id/hgl1" />
     </ConstraintSet>
 
@@ -100,6 +121,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toEndOf="@id/love_letter_o"
+            motion:layout_constraintBottom_toTopOf="@id/vgl2"
+            android:layout_marginStart="30dp"/>
+
+        <Constraint
+            android:id="@id/love_letter_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="@id/love_letter_v"
             motion:layout_constraintBottom_toTopOf="@id/vgl2"
             android:layout_marginStart="30dp"/>
     </ConstraintSet>

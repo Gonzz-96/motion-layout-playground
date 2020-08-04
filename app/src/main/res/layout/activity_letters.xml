@@ -20,7 +20,6 @@
         android:id="@+id/letter_i"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
         android:textSize="24sp"
         android:text="I" />
 
@@ -28,7 +27,6 @@
         android:id="@+id/love_letter_l"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
         android:textSize="24sp"
         android:text="L" />
 
@@ -36,7 +34,6 @@
         android:id="@+id/love_letter_o"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
         android:textSize="24sp"
         android:text="O" />
 
@@ -44,9 +41,15 @@
         android:id="@+id/love_letter_v"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
         android:textSize="24sp"
         android:text="V" />
+
+    <TextView
+        android:id="@+id/love_letter_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="E" />
 
     <!-- hgl stands for "horizontal guideline" -->
     <androidx.constraintlayout.widget.Guideline
@@ -61,7 +64,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="236dp" />
+        app:layout_constraintGuide_percent="0.283" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hgl2"
