@@ -297,16 +297,16 @@
             android:id="@id/programming_letter_p"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintStart_toEndOf="@id/programming_letter_r_1"
-            motion:layout_constraintEnd_toStartOf="@id/hgl3"
+            motion:layout_constraintStart_toEndOf="@id/hgl5"
+            motion:layout_constraintEnd_toStartOf="@id/programming_letter_r_1"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
         <Constraint
             android:id="@id/programming_letter_r_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintEnd_toStartOf="@id/programming_letter_o"
             motion:layout_constraintStart_toEndOf="@id/programming_letter_p"
+            motion:layout_constraintEnd_toStartOf="@id/programming_letter_o"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
         <Constraint
@@ -330,6 +330,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toEndOf="@id/programming_letter_g_1"
+            motion:layout_constraintEnd_toStartOf="@id/programming_letter_a"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
         <Constraint
@@ -337,6 +338,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toEndOf="@id/programming_letter_r_2"
+            motion:layout_constraintEnd_toStartOf="@id/programming_letter_m_1"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
         <Constraint
@@ -344,12 +346,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toEndOf="@id/programming_letter_a"
+            motion:layout_constraintEnd_toStartOf="@id/programming_letter_m_2"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
         <Constraint
             android:id="@id/programming_letter_m_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="@id/programming_letter_m_1"
             motion:layout_constraintEnd_toStartOf="@id/programming_letter_i"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
@@ -357,6 +361,7 @@
             android:id="@id/programming_letter_i"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="@id/programming_letter_m_2"
             motion:layout_constraintEnd_toStartOf="@id/programming_letter_n"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
@@ -364,6 +369,7 @@
             android:id="@id/programming_letter_n"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="@id/programming_letter_i"
             motion:layout_constraintEnd_toStartOf="@id/programming_letter_g_2"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
@@ -371,7 +377,8 @@
             android:id="@id/programming_letter_g_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintStart_toEndOf="@id/hgl4"
+            motion:layout_constraintStart_toEndOf="@id/programming_letter_n"
+            motion:layout_constraintEnd_toStartOf="@id/hgl6"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
     </ConstraintSet>
 
