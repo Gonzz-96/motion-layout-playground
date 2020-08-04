@@ -257,41 +257,43 @@
             android:id="@id/letter_i"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toTopOf="@id/vgl2"
-            motion:layout_constraintStart_toEndOf="@id/hgl3"/>
+            android:layout_marginEnd="50dp"
+            motion:layout_constraintStart_toEndOf="@id/hgl3"
+            motion:layout_constraintEnd_toStartOf="@id/love_letter_l"
+            motion:layout_constraintBottom_toTopOf="@id/vgl2" />
 
         <Constraint
             android:id="@id/love_letter_l"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toEndOf="@id/letter_i"
-            motion:layout_constraintBottom_toTopOf="@id/vgl2"
-            android:layout_marginStart="100dp"/>
+            motion:layout_constraintEnd_toStartOf="@id/love_letter_o"
+            motion:layout_constraintBottom_toTopOf="@id/vgl2"/>
 
         <Constraint
             android:id="@id/love_letter_o"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toEndOf="@id/love_letter_l"
-            motion:layout_constraintBottom_toTopOf="@id/vgl2"
-            android:layout_marginStart="30dp"/>
+            motion:layout_constraintEnd_toStartOf="@id/love_letter_v"
+            motion:layout_constraintBottom_toTopOf="@id/vgl2"/>
 
         <Constraint
             android:id="@id/love_letter_v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toEndOf="@id/love_letter_o"
-            motion:layout_constraintBottom_toTopOf="@id/vgl2"
-            android:layout_marginStart="30dp"/>
+            motion:layout_constraintEnd_toStartOf="@id/love_letter_e"
+            motion:layout_constraintBottom_toTopOf="@id/vgl2" />
 
         <Constraint
             android:id="@id/love_letter_e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintVertical_chainStyle="spread"
+            motion:layout_constraintEnd_toStartOf="@id/hgl4"
             motion:layout_constraintStart_toEndOf="@id/love_letter_v"
-            motion:layout_constraintBottom_toTopOf="@id/vgl2"
-            android:layout_marginStart="30dp"/>
+            motion:layout_constraintBottom_toTopOf="@id/vgl2" />
 
         <Constraint
             android:id="@id/programming_letter_p"
