@@ -80,6 +80,13 @@
         android:text="G" />
 
     <TextView
+        android:id="@+id/programming_letter_r_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="R" />
+
+    <TextView
         android:id="@+id/programming_letter_g_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
