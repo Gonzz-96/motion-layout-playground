@@ -85,6 +85,12 @@
                 motion:percentY="0" />
 
             <KeyPosition
+                motion:motionTarget="@id/programming_letter_i"
+                motion:framePosition="50"
+                motion:percentX="1"
+                motion:percentY="0" />
+
+            <KeyPosition
                 motion:motionTarget="@id/programming_letter_n"
                 motion:framePosition="50"
                 motion:percentX="1"
@@ -207,6 +213,15 @@
             motion:layout_constraintTop_toBottomOf="@id/programming_letter_a" />
 
         <Constraint
+            android:id="@id/programming_letter_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:layout_constraintBottom_toTopOf="@id/programming_letter_n"
+            motion:layout_constraintStart_toEndOf="@id/hgl2" />
+
+        <Constraint
             android:id="@id/programming_letter_n"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -315,6 +330,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toEndOf="@id/programming_letter_a"
+            motion:layout_constraintTop_toBottomOf="@id/vgl2" />
+
+        <Constraint
+            android:id="@id/programming_letter_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@id/programming_letter_n"
             motion:layout_constraintTop_toBottomOf="@id/vgl2" />
 
         <Constraint
